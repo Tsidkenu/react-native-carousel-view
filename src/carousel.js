@@ -103,9 +103,10 @@ export default class Carousel extends Component {
   componentWillReceiveProps(nextProps: Props) {
     this._filterChildren();
 
-    // when received props it will update all views, with new props.
+    /* Disabled this because it will prevent the carousel from autoplaying
+    when received props it will update all views, with new props.
     this.clearTimeout(this.timer);
-    this._resetPager();
+    this._resetPager();*/
   }
 
   componentDidMount() {
